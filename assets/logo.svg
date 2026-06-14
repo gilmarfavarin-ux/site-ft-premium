@@ -5,17 +5,13 @@
       <stop offset="100%" stop-color="#D96FED"/>
     </linearGradient>
   </defs>
-  <g stroke="url(#lg)" stroke-width="7" stroke-linecap="round" fill="none">
-    <line x1="22" y1="18" x2="22" y2="102"/>
-    <line x1="22" y1="18" x2="60" y2="18"/>
-    <line x1="22" y1="55" x2="48" y2="55"/>
-    <line x1="60" y1="18" x2="102" y2="18"/>
-    <line x1="81" y1="18" x2="81" y2="102"/>
-  </g>
-  <g fill="url(#lg)">
-    <circle cx="22" cy="102" r="5"/>
-    <circle cx="48" cy="55" r="5"/>
-    <circle cx="102" cy="18" r="5"/>
-    <circle cx="81" cy="102" r="5"/>
-  </g>
+  <line x1="22" y1="18" x2="22" y2="102" stroke="url(#lg)" stroke-width="8" stroke-linecap="round"/>
+  <line x1="22" y1="18" x2="60" y2="18" stroke="url(#lg)" stroke-width="8" stroke-linecap="round"/>
+  <line x1="22" y1="55" x2="48" y2="55" stroke="url(#lg)" stroke-width="8" stroke-linecap="round"/>
+  <line x1="60" y1="18" x2="102" y2="18" stroke="url(#lg)" stroke-width="8" stroke-linecap="round"/>
+  <line x1="81" y1="18" x2="81" y2="102" stroke="url(#lg)" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="22" cy="102" r="5.5" fill="#D96FED"/>
+  <circle cx="48" cy="55" r="5.5" fill="#6B9EFF"/>
+  <circle cx="102" cy="18" r="5.5" fill="#D96FED"/>
+  <circle cx="81" cy="102" r="5.5" fill="#D96FED"/>
 </svg>
