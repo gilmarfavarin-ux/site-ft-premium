@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog — FT Consult</title>
+  <meta name="description" content="Conteúdos sobre gestão de TI, segurança, Microsoft 365, infraestrutura e produtividade para empresas."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand"><img src="assets/logo.svg" alt="" class="brand-logo"/><span class="brand-copy"><strong>FT Consult</strong><small>soluções em tecnologia</small></span></a>
+    <nav class="nav desktop-nav">
+      <a href="servicos.html">Serviços</a><a href="como-trabalhamos.html">Como Trabalhamos</a><a href="quem-somos.html">Quem Somos</a><a href="cases.html">Cases</a><a href="blog.html">Blog</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="contato.html" class="btn btn-outline desktop-only">Falar com especialista</a>
+      <a href="contato.html" class="btn btn-primary">Agendar diagnóstico</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="servicos.html">Serviços</a><a href="como-trabalhamos.html">Como Trabalhamos</a><a href="quem-somos.html">Quem Somos</a><a href="cases.html">Cases</a><a href="blog.html">Blog</a><a href="contato.html">Agendar diagnóstico</a>
+  </nav>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <span class="eyebrow">Blog</span>
+      <h1>Conteúdos para empresas que querem uma TI mais organizada, segura e estratégica.</h1>
+      <p>Insights, orientações e conteúdos práticos sobre tecnologia, produtividade, segurança, infraestrutura e gestão.</p>
+    </div>
+  </section>
+
+  <section class="section section-white">
+    <div class="container">
+      <div class="cat-filter">
+        <button class="cat-btn active">Todos</button>
+        <button class="cat-btn">Gestão de TI</button>
+        <button class="cat-btn">Segurança e LGPD</button>
+        <button class="cat-btn">Microsoft 365</button>
+        <button class="cat-btn">Infraestrutura</button>
+        <button class="cat-btn">Produtividade</button>
+        <button class="cat-btn">Backup e Continuidade</button>
+      </div>
+
+      <div class="cards-grid cards-3">
+
+        <article class="blog-card">
+          <div class="blog-card-img" style="background:linear-gradient(135deg,#071221,#13133c)">
+            <svg width="48" height="48" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/><circle cx="12" cy="12" r="7"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-cat">Gestão de TI</span>
+            <h3>Por que sua empresa precisa de um departamento de TI estratégico — mesmo sem ter um interno</h3>
+            <p>A maioria das PMEs opera com TI reativa. Entenda o impacto disso no negócio e como mudar.</p>
+            <div class="blog-card-footer">7 min de leitura</div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-img" style="background:linear-gradient(135deg,#071221,#0f1d3d)">
+            <svg width="48" height="48" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-cat">Segurança e LGPD</span>
+            <h3>5 riscos de segurança que sua empresa provavelmente está ignorando hoje</h3>
+            <p>Senhas fracas, backups sem teste, acessos não revogados: veja o que mais compromete empresas de médio porte.</p>
+            <div class="blog-card-footer">5 min de leitura</div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-img" style="background:linear-gradient(135deg,#0c1a37,#071221)">
+            <svg width="48" height="48" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-cat">Microsoft 365</span>
+            <h3>Microsoft 365: como aproveitar de verdade o que você já paga</h3>
+            <p>A maioria das empresas usa menos de 30% do potencial do M365. Veja o que você está deixando na mesa.</p>
+            <div class="blog-card-footer">6 min de leitura</div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-img" style="background:linear-gradient(135deg,#13133c,#071221)">
+            <svg width="48" height="48" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-cat">Backup e Continuidade</span>
+            <h3>Sua empresa realmente tem backup? Veja como testar se ele funciona de verdade</h3>
+            <p>Ter backup não é o mesmo que ter recuperação garantida. Entenda a diferença e o que fazer.</p>
+            <div class="blog-card-footer">4 min de leitura</div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-img" style="background:linear-gradient(135deg,#071221,#0e1b33)">
+            <svg width="48" height="48" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-cat">Infraestrutura</span>
+            <h3>Nuvem, servidor local ou híbrido? Como escolher o que faz sentido para sua empresa</h3>
+            <p>Não existe resposta única. Veja os critérios que realmente importam para tomar essa decisão.</p>
+            <div class="blog-card-footer">8 min de leitura</div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card-img" style="background:linear-gradient(135deg,#0d1830,#13133c)">
+            <svg width="48" height="48" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.5" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <div class="blog-card-body">
+            <span class="blog-cat">Produtividade</span>
+            <h3>Como a TI bem gerida libera tempo estratégico dentro da empresa</h3>
+            <p>Quando a tecnologia para de ser problema, as pessoas certas voltam a focar no que importa.</p>
+            <div class="blog-card-footer">5 min de leitura</div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-block section-contact">
+    <div class="container" style="text-align:center">
+      <span class="eyebrow center">Da teoria à prática</span>
+      <h2>Quer levar esse conhecimento para a prática na sua empresa?</h2>
+      <p>Fale com a equipe da FT Consult e descubra como aplicar essas ideias no seu ambiente de TI.</p>
+      <div class="cta-buttons">
+        <a href="contato.html" class="btn btn-primary btn-lg">Falar com a FT Consult</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><a href="index.html" class="brand footer-brand"><img src="assets/logo.svg" alt="" class="brand-logo"/><span class="brand-copy"><strong>FT Consult</strong><small>soluções em tecnologia</small></span></a><p class="footer-desc">A FT Consult assume a gestão completa da TI da sua empresa para que ela funcione de forma transparente, segura e alinhada ao crescimento do negócio.</p></div>
+    <div><h4>Navegação</h4><ul><li><a href="servicos.html">Serviços</a></li><li><a href="como-trabalhamos.html">Como Trabalhamos</a></li><li><a href="quem-somos.html">Quem Somos</a></li><li><a href="cases.html">Cases</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+    <div><h4>Empresa</h4><ul><li><a href="quem-somos.html">Sobre a FT</a></li><li><a href="contato.html">Agendar diagnóstico</a></li><li><a href="contato.html">Falar com especialista</a></li></ul></div>
+    <div><h4>Contato</h4><ul><li>contato@ftconsult.com.br</li><li>São Paulo • Brasil</li></ul></div>
+  </div>
+  <div class="container footer-bottom"><span>© 2025 FT Consult. Todos os direitos reservados.</span><span><a href="#">Política de Privacidade</a></span></div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script>
+  document.querySelectorAll('.cat-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

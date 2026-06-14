@@ -1,0 +1,21 @@
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FT Consult">
+  <defs>
+    <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ABFF"/>
+      <stop offset="100%" stop-color="#D96FED"/>
+    </linearGradient>
+  </defs>
+  <g stroke="url(#lg)" stroke-width="7" stroke-linecap="round" fill="none">
+    <line x1="22" y1="18" x2="22" y2="102"/>
+    <line x1="22" y1="18" x2="60" y2="18"/>
+    <line x1="22" y1="55" x2="48" y2="55"/>
+    <line x1="60" y1="18" x2="102" y2="18"/>
+    <line x1="81" y1="18" x2="81" y2="102"/>
+  </g>
+  <g fill="url(#lg)">
+    <circle cx="22" cy="102" r="5"/>
+    <circle cx="48" cy="55" r="5"/>
+    <circle cx="102" cy="18" r="5"/>
+    <circle cx="81" cy="102" r="5"/>
+  </g>
+</svg>
