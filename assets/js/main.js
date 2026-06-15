@@ -11,13 +11,25 @@ if (hamburger && mobileNav) {
   });
 }
 
-/* Mark active nav link */
+/* Active nav link */
 const currentPage = location.pathname.replace(/\/$/, '').split('/').pop() || 'index.html';
 document.querySelectorAll('.nav a, .mobile-nav a').forEach(a => {
   const href = a.getAttribute('href').split('/').pop();
   if (href === currentPage || (currentPage === '' && href === 'index.html')) {
     a.classList.add('active');
   }
+});
+
+/* Scroll animations */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.info-card, .service-card, .case-card, .step-card, .blog-card, .method-step, .value-card, .mvv-card, .trust-item, .result-item, .benefit-item, .faq-list details, .section-intro').forEach((el, i) => {
+  el.classList.add('reveal');
+  if (i % 4 === 1) el.classList.add('reveal-delay-1');
+  if (i % 4 === 2) el.classList.add('reveal-delay-2');
+  if (i % 4 === 3) el.classList.add('reveal-delay-3');
+  observer.observe(el);
 });
 
 /* Contact form */
@@ -38,22 +50,19 @@ if (form) {
         body: JSON.stringify(data)
       });
       if (res.ok) {
-        msgEl.className = 'form-msg success';
-        msgEl.textContent = '✓ Recebemos seu contato! Em breve nossa equipe entrará em contato.';
-        msgEl.style.display = 'block';
-        form.reset();
+        window.location.href = '/obrigado.html';
       } else throw new Error();
     } catch {
       msgEl.className = 'form-msg error';
-      msgEl.textContent = 'Ocorreu um erro ao enviar. Tente novamente ou entre em contato pelo WhatsApp.';
+      msgEl.textContent = 'Ocorreu um erro ao enviar. Tente pelo WhatsApp: (11) 97391-1674';
       msgEl.style.display = 'block';
+      btn.disabled = false;
+      btn.textContent = 'Quero meu diagnóstico estratégico';
     }
-    btn.disabled = false;
-    btn.textContent = 'Quero meu diagnóstico estratégico';
   });
 }
 
-/* Smooth scroll for anchor links on same page */
+/* Smooth scroll for anchor links */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const target = document.querySelector(a.getAttribute('href'));
