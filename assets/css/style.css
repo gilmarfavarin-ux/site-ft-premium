@@ -242,11 +242,6 @@ p:last-child { margin-bottom: 0; }
 }
 .trust-item strong { display: block; margin-bottom: 4px; font-size: 1rem; }
 .trust-item span { color: var(--text-soft); font-size: .92rem; }
-.trust-item-badge {
-  display: flex; gap: 12px; align-items: center;
-  border-color: rgba(0,164,239,.25); background: #f0f8ff;
-}
-.trust-item-badge strong { color: #005a9e; font-size: .97rem; }
 
 /* ── Cards ── */
 .cards-grid { display: grid; gap: 18px; }
