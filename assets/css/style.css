@@ -576,6 +576,16 @@ p:last-child { margin-bottom: 0; }
 .footer-bottom a { color: rgba(255,255,255,.44); }
 .footer-bottom a:hover { color: rgba(255,255,255,.7); }
 
+/* ── Footer social ── */
+.footer-social { display: flex; gap: 10px; margin-top: 16px; }
+.footer-social a {
+  width: 34px; height: 34px; border-radius: 8px;
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.1);
+  display: grid; place-items: center; transition: background .2s, border-color .2s;
+}
+.footer-social a:hover { background: rgba(0,171,255,.18); border-color: rgba(0,171,255,.4); }
+.footer-social a svg { display: block; }
+
 /* ── WhatsApp button ── */
 .whatsapp-btn {
   position: fixed; bottom: 28px; right: 28px; z-index: 200;
