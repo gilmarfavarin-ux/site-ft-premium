@@ -485,7 +485,7 @@ p:last-child { margin-bottom: 0; }
   background: linear-gradient(135deg,rgba(0,171,255,.1),rgba(217,111,237,.12));
   color: var(--cyan);
 }
-.value-card h3 { margin: 0 0 8px; font-size: 1rem; color: var(--heading); }
+.value-card h3 { margin: 0 0 8px; font-size: 1rem; color: #0d1830; }
 .value-card p { margin: 0; color: var(--text-soft); font-size: .9rem; }
 
 /* ── Blog ── */
