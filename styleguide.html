@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guia de Estilos — FT Consult</title>
+  <meta name="robots" content="noindex"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml"/>
+  <style>
+    .sg-section { padding: 56px 0; border-bottom: 1px solid #e8edf4; }
+    .sg-label { font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: #888; margin-bottom: 8px; }
+    .sg-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; margin-top: 24px; }
+    .sg-swatch { width: 80px; text-align: center; }
+    .sg-swatch-box { width: 80px; height: 80px; border-radius: 14px; margin-bottom: 8px; border: 1px solid rgba(0,0,0,.08); }
+    .sg-swatch span { font-size: .78rem; color: #555; display: block; }
+    .sg-swatch code { font-size: .72rem; color: #999; font-family: monospace; }
+    .sg-note { font-size: .9rem; color: #666; margin: 12px 0 0; line-height: 1.6; }
+    .sg-note strong { color: #333; }
+    body { background: #f7faff; }
+    .sg-page { background: white; }
+    h1.sg-title { font-size: 2rem; font-weight: 800; color: #0d1830; margin: 0 0 8px; }
+    .sg-subtitle { color: #666; font-size: 1rem; margin: 0 0 48px; }
+    .sg-h { font-size: 1.1rem; font-weight: 700; color: #0d1830; margin: 0 0 20px; }
+    .sg-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .sg-box { padding: 24px; border-radius: 12px; border: 1px solid #e2e8f0; background: white; }
+    .wp-note { display: inline-block; padding: 3px 10px; border-radius: 6px; background: #fff3cd; border: 1px solid #ffc107; font-size: .78rem; color: #856404; font-weight: 600; margin-left: 8px; vertical-align: middle; }
+  </style>
+</head>
+<body class="sg-page">
+
+<div style="background:#0d1830;padding:16px 0;margin-bottom:0">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between">
+    <a href="index.html" class="brand"><span class="brand-mark">FT</span><span class="brand-copy"><strong style="color:white">FT Consult</strong><small style="color:rgba(255,255,255,.6)">soluções em tecnologia</small></span></a>
+    <span style="color:rgba(255,255,255,.5);font-size:.85rem">Guia de Estilos — uso interno / referência para WordPress</span>
+  </div>
+</div>
+
+<main>
+<div class="container" style="padding-top:48px;padding-bottom:96px">
+
+  <h1 class="sg-title">Guia de Estilos — FT Consult</h1>
+  <p class="sg-subtitle">Referência visual para a equipe de desenvolvimento WordPress. Todos os tokens, componentes e padrões de layout usados no protótipo.</p>
+
+  <!-- ══════════════════════════════════════════
+       1. CORES
+  ══════════════════════════════════════════ -->
+  <div class="sg-section">
+    <h2 class="sg-h">1. Paleta de Cores <span class="wp-note">WordPress → Tema → Cores do site</span></h2>
+
+    <p class="sg-label">Cores primárias</p>
+    <div class="sg-row">
+      <div class="sg-swatch">
+        <div class="sg-swatch-box" style="background:#00ABFF"></div>
+        <span>Cyan</span>
+        <code>#00ABFF</code>
+      </div>
+      <div class="sg-swatch">
+        <div class="sg-swatch-box" style="background:#D96FED"></div>
+        <span>Violet</span>
+        <code>#D96FED</code>
+      </div>
+      <div class="sg-swatch">
+        <div class="sg-swatch-box" style="background:linear-gradient(135deg,#00ABFF,#D96FED)"></div>
+        <span>Gradiente</span>
+        <code>135deg →</code>
+      </div>
+    </div>
+
+    <p class="sg-label" style="margin-top:28px">Fundos escuros (seções dark)</p>
+    <div class="sg-row">
+      <div class="sg-swatch">
+        <div class="sg-swatch-box" style="background:#071221"></div>
+        <span>Dark 900</span>
+        <code>#071221</code>
+      </div>
+      <div class="sg-swatch">
+        <div class="sg-swatch-box" style="background:#08111f"></div>
+        <span>Footer</span>
+        <code>#08111f</code>
+      </div>
+      <div class="sg-swatch">
+        <div class="sg-swatch-box" style="background:#0d1830"></div>
+        <span>Dark 800</span>
+        <code>#0d1830</code>
+      </div>
+      <div class="sg-swatch">
+        <div class="sg-swatch-box" style="background:#111a39"></div>
+        <span>Dark 700</span>
+        <code>#111a39</code>
+      </div>
+    </div>
+
+    <p class="sg-label" style="margin-top:28px">Texto e neutros</p>
+    <div class="sg-row">
+      <div class="sg-swatch">
+        <div class="sg-swatch-box" style="background:#1a2640"></div>
+        <span>Texto principal</span>
+        <code>#1a2640</code>
+      </div>
+      <div class="sg-swatch">
+        <div class="sg-swatch-box" style="background:#8D8D8D"></div>
+        <span>Texto suave</span>
+        <code>#8D8D8D</code>
+      </div>
+      <div class="sg-swatch">
+        <div class="sg-swatch-box" style="background:#f7faff;border:1px solid #e2e8f0"></div>
+        <span>Fundo claro</span>
+        <code>#f7faff</code>
+      </div>
+      <div class="sg-swatch">
+        <div class="sg-swatch-box" style="background:#25D366"></div>
+        <span>WhatsApp</span>
+        <code>#25D366</code>
+      </div>
+    </div>
+
+    <p class="sg-note"><strong>Uso do gradiente:</strong> aplicado em títulos de destaque (<code>background-clip: text</code>), no badge da marca, no botão primário e em ícones de ação. No WordPress, usar plugin de gradiente ou CSS customizado no tema.</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       2. TIPOGRAFIA
+  ══════════════════════════════════════════ -->
+  <div class="sg-section">
+    <h2 class="sg-h">2. Tipografia <span class="wp-note">Google Fonts → Inter</span></h2>
+
+    <p class="sg-label">Família e pesos</p>
+    <p class="sg-note" style="margin:0 0 24px"><strong>Fonte:</strong> Inter (Google Fonts) — pesos 300, 400, 500, 600, 700, 800.<br>Carregar via: <code>https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap</code></p>
+
+    <div style="display:grid;gap:20px">
+      <div>
+        <p class="sg-label">H1 — Títulos de página / Hero</p>
+        <p style="font-size:clamp(2.4rem,5vw,4rem);font-weight:800;line-height:1.04;letter-spacing:-.04em;color:#0d1830;margin:0">Transforme sua TI hoje</p>
+        <p class="sg-note">clamp(2.4rem, 5vw, 4rem) · weight 800 · letter-spacing -0.04em · line-height 1.04</p>
+      </div>
+      <div>
+        <p class="sg-label">H2 — Títulos de seção</p>
+        <p style="font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:800;line-height:1.08;letter-spacing:-.03em;color:#0d1830;margin:0">Nosso método de trabalho</p>
+        <p class="sg-note">clamp(1.8rem, 3.5vw, 2.8rem) · weight 800 · letter-spacing -0.03em</p>
+      </div>
+      <div>
+        <p class="sg-label">H3 — Subtítulos de card</p>
+        <p style="font-size:1.18rem;font-weight:700;color:#0d1830;margin:0">Gestão de Microsoft 365</p>
+        <p class="sg-note">1.18rem · weight 700</p>
+      </div>
+      <div>
+        <p class="sg-label">Body — Texto corrido</p>
+        <p style="font-size:1.06rem;color:#4a5568;line-height:1.7;margin:0">Texto de parágrafo padrão usado em descrições, leads e conteúdo de seções. Tamanho base 1rem (16px), com leitura confortável em 1.06rem para parágrafos principais.</p>
+        <p class="sg-note">1.06rem · weight 400 · line-height 1.7 · cor #4a5568</p>
+      </div>
+      <div>
+        <p class="sg-label">Eyebrow — Rótulo acima de títulos</p>
+        <span class="eyebrow">Diagnóstico estratégico</span>
+        <p class="sg-note" style="margin-top:10px">0.8rem · weight 700 · uppercase · letter-spacing 0.1em · cor cyan (#00ABFF)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       3. BOTÕES
+  ══════════════════════════════════════════ -->
+  <div class="sg-section">
+    <h2 class="sg-h">3. Botões <span class="wp-note">WordPress → Blocos → Botão</span></h2>
+
+    <div class="sg-row" style="align-items:center">
+      <div>
+        <p class="sg-label">Primário</p>
+        <a href="#" class="btn btn-primary">Agendar diagnóstico</a>
+        <p class="sg-note">Gradiente cyan→violet · border-radius 999px · padding 12px 24px · weight 600</p>
+      </div>
+      <div>
+        <p class="sg-label">Outline (sobre fundo escuro)</p>
+        <div style="background:#0d1830;padding:16px;border-radius:12px;display:inline-block">
+          <a href="#" class="btn btn-outline">Falar com especialista</a>
+        </div>
+        <p class="sg-note">Border 1px branco 30% · texto branco · hover: branco 10% background</p>
+      </div>
+      <div>
+        <p class="sg-label">Grande (btn-lg)</p>
+        <a href="#" class="btn btn-primary btn-lg">Quero meu diagnóstico</a>
+        <p class="sg-note">Mesmos estilos + padding maior</p>
+      </div>
+      <div>
+        <p class="sg-label">Largura total (btn-full)</p>
+        <div style="width:280px">
+          <a href="#" class="btn btn-primary btn-lg btn-full">Enviar</a>
+        </div>
+        <p class="sg-note">width: 100%</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       4. TIPOS DE SEÇÃO / FUNDO
+  ══════════════════════════════════════════ -->
+  <div class="sg-section">
+    <h2 class="sg-h">4. Tipos de Seção <span class="wp-note">WordPress → Grupo → Cor de fundo</span></h2>
+
+    <div style="display:grid;gap:16px">
+      <div>
+        <p class="sg-label">section-white — fundo branco puro</p>
+        <div style="padding:28px;border-radius:12px;background:white;border:1px solid #e2e8f0">
+          <p style="margin:0;color:#1a2640">Usada para conteúdo principal em páginas internas. Fundo: <code>#ffffff</code></p>
+        </div>
+      </div>
+      <div>
+        <p class="sg-label">section-soft — fundo azul muito claro</p>
+        <div style="padding:28px;border-radius:12px;background:linear-gradient(180deg,#f7faff 0%,#f3f8ff 100%);border:1px solid #e2e8f0">
+          <p style="margin:0;color:#1a2640">Usada para alternar com branco e criar ritmo visual. Fundo: <code>linear-gradient(180deg, #f7faff, #f3f8ff)</code></p>
+        </div>
+      </div>
+      <div>
+        <p class="sg-label">section-dark — fundo escuro com gradiente radial</p>
+        <div class="section-dark" style="padding:28px;border-radius:12px">
+          <p style="margin:0;color:rgba(255,255,255,.8)">Usada para seções de destaque: valores, dores, método. Fundo escuro com radiais cyan/violet nos cantos.</p>
+        </div>
+      </div>
+      <div>
+        <p class="sg-label">section-contact — fundo escuro para Hero e formulários</p>
+        <div class="section-contact" style="padding:28px;border-radius:12px">
+          <p style="margin:0;color:rgba(255,255,255,.8)">Gradiente mais profundo com textura de pontos. Usado no Hero da home e nas páginas de formulário.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       5. COMPONENTES
+  ══════════════════════════════════════════ -->
+  <div class="sg-section">
+    <h2 class="sg-h">5. Componentes</h2>
+
+    <div class="sg-grid2" style="margin-bottom:32px">
+      <div>
+        <p class="sg-label">Card de serviço</p>
+        <div class="service-card">
+          <div class="service-card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>Nome do serviço</h3>
+          <p>Descrição breve do que este serviço entrega ao cliente.</p>
+          <ul class="service-features"><li>Benefício 1</li><li>Benefício 2</li><li>Benefício 3</li></ul>
+        </div>
+        <p class="sg-note">Classe: <code>.service-card</code> · fundo branco · borda sutil · hover eleva com sombra cyan</p>
+      </div>
+      <div>
+        <p class="sg-label">Card de valor</p>
+        <div style="background:#f7faff;padding:20px;border-radius:12px">
+          <div class="value-card">
+            <div class="value-card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+            <h3>Senso de dono</h3>
+            <p>Trabalhamos como se a empresa do cliente fosse nossa.</p>
+          </div>
+        </div>
+        <p class="sg-note">Classe: <code>.value-card</code> · ícone com fundo gradiente suave · grade de 5 colunas (<code>.value-card-list</code>)</p>
+      </div>
+    </div>
+
+    <div class="sg-grid2" style="margin-bottom:32px">
+      <div>
+        <p class="sg-label">Card de case</p>
+        <div class="case-card">
+          <div class="case-tag">Varejo</div>
+          <h3>Título do case</h3>
+          <div class="case-result"><span class="case-result-number">+40%</span><span class="case-result-label">de produtividade</span></div>
+          <p>Resumo do problema e da solução entregue.</p>
+        </div>
+        <p class="sg-note">Classe: <code>.case-card</code> · tag colorida por setor · número de resultado em destaque</p>
+      </div>
+      <div>
+        <p class="sg-label">Item de FAQ</p>
+        <div class="faq-list" style="max-width:100%">
+          <details><summary>Como funciona o diagnóstico estratégico?</summary><p>O diagnóstico é uma conversa estruturada onde entendemos o ambiente atual e identificamos riscos e oportunidades.</p></details>
+          <details><summary>A FT atende presencial ou remoto?</summary><p>Atuamos de forma híbrida.</p></details>
+        </div>
+        <p class="sg-note">Elemento HTML nativo <code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> · borda entre itens · animação de abertura via CSS</p>
+      </div>
+    </div>
+
+    <div>
+      <p class="sg-label">Formulário</p>
+      <div style="max-width:480px">
+        <form class="contact-form" onsubmit="return false">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="sg-nome">Nome</label>
+              <input type="text" id="sg-nome" placeholder="Seu nome completo"/>
+            </div>
+            <div class="form-field">
+              <label for="sg-email">E-mail</label>
+              <input type="email" id="sg-email" placeholder="voce@empresa.com"/>
+            </div>
+            <div class="form-field full">
+              <label for="sg-msg">Mensagem</label>
+              <textarea id="sg-msg" rows="3" placeholder="Sua mensagem..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-full">Enviar</button>
+        </form>
+      </div>
+      <p class="sg-note">Classe: <code>.contact-form</code> · grade de 2 colunas (<code>.form-grid</code>) · campo full-width via classe <code>.full</code> · labels acima dos campos · fundo white com borda sutil</p>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       6. LAYOUT / GRID
+  ══════════════════════════════════════════ -->
+  <div class="sg-section">
+    <h2 class="sg-h">6. Layout e Grid <span class="wp-note">WordPress → Larguras de bloco</span></h2>
+
+    <div style="display:grid;gap:16px">
+      <div class="sg-box">
+        <p class="sg-label">Container principal</p>
+        <p class="sg-note"><code>.container</code> → max-width: <strong>1200px</strong> · padding lateral: 24px · centralizado com margin auto</p>
+      </div>
+      <div class="sg-box">
+        <p class="sg-label">Seção padrão</p>
+        <p class="sg-note"><code>.section</code> → padding: <strong>72px 0</strong></p>
+      </div>
+      <div class="sg-box">
+        <p class="sg-label">Grid de 2 colunas (split)</p>
+        <p class="sg-note"><code>.split-head</code> → grid 2 colunas, gap 48px, alinhamento center vertical · em mobile: 1 coluna</p>
+      </div>
+      <div class="sg-box">
+        <p class="sg-label">Grid de serviços</p>
+        <p class="sg-note"><code>.service-grid</code> → 3 colunas no desktop · 2 no tablet · 1 no mobile</p>
+      </div>
+      <div class="sg-box">
+        <p class="sg-label">Grid de valores</p>
+        <p class="sg-note"><code>.value-card-list</code> → 5 colunas no desktop · 3 no tablet · 2 no mobile</p>
+      </div>
+      <div class="sg-box">
+        <p class="sg-label">Breakpoints responsivos</p>
+        <p class="sg-note">
+          <strong>Desktop:</strong> acima de 900px<br>
+          <strong>Tablet:</strong> 600px – 900px<br>
+          <strong>Mobile:</strong> abaixo de 600px<br>
+          Navegação mobile ativa abaixo de <strong>900px</strong> (hamburguer)
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       7. MARCA / LOGO
+  ══════════════════════════════════════════ -->
+  <div class="sg-section">
+    <h2 class="sg-h">7. Identidade Visual da Marca</h2>
+
+    <div class="sg-row" style="align-items:flex-start">
+      <div>
+        <p class="sg-label">Logo no header (claro/escuro)</p>
+        <div style="background:#0d1830;padding:16px 24px;border-radius:12px;display:inline-flex">
+          <a href="#" class="brand"><span class="brand-mark">FT</span><span class="brand-copy"><strong style="color:white">FT Consult</strong><small style="color:rgba(255,255,255,.6)">soluções em tecnologia</small></span></a>
+        </div>
+        <p class="sg-note">Badge <code>.brand-mark</code>: 46×46px · border-radius 14px · gradiente cyan→violet · texto "FT" branco bold<br>Fonte do nome: Inter 700 · Tagline: Inter 400 opacity 60%</p>
+      </div>
+      <div>
+        <p class="sg-label">Favicon / ícone</p>
+        <img src="assets/logo.svg" width="80" height="80" alt="Favicon FT Consult" style="display:block;border-radius:14px"/>
+        <p class="sg-note">Arquivo: <code>assets/logo.svg</code><br>Rect com rx=28, gradiente cyan→violet, texto FT Inter 800</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       8. ANIMAÇÕES
+  ══════════════════════════════════════════ -->
+  <div class="sg-section">
+    <h2 class="sg-h">8. Animações e Interações</h2>
+
+    <div style="display:grid;gap:16px">
+      <div class="sg-box">
+        <p class="sg-label">Scroll reveal</p>
+        <p class="sg-note">Elementos com classe <code>.reveal</code> iniciam invisíveis (<code>opacity: 0; transform: translateY(28px)</code>) e aparecem ao entrar no viewport via <strong>IntersectionObserver</strong> adicionando a classe <code>.visible</code>.<br>
+        Elementos observados: <code>.info-card, .service-card, .benefit-item, .case-card, .value-card, .method-step, .reveal</code><br>
+        Implementado em: <code>assets/js/main.js</code></p>
+      </div>
+      <div class="sg-box">
+        <p class="sg-label">Hover em cards</p>
+        <p class="sg-note">Cards de serviço elevam com <code>transform: translateY(-4px)</code> e sombra cyan. Transição: 0.3s ease.</p>
+      </div>
+      <div class="sg-box">
+        <p class="sg-label">Header ao scroll</p>
+        <p class="sg-note">O header ganha classe <code>.scrolled</code> após 40px de scroll, adicionando <code>backdrop-filter: blur(12px)</code> e borda inferior sutil. Implementado em <code>assets/js/main.js</code>.</p>
+      </div>
+      <div class="sg-box">
+        <p class="sg-label">Botão WhatsApp flutuante</p>
+        <p class="sg-note">Fixo no canto inferior direito. Fundo: <code>#25D366</code>. Sombra verde. Hover: scale 1.08. Presente em todas as páginas exceto obrigado.html.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       9. MAPA DE PÁGINAS
+  ══════════════════════════════════════════ -->
+  <div class="sg-section" style="border-bottom:none">
+    <h2 class="sg-h">9. Mapa de Páginas <span class="wp-note">WordPress → Estrutura de páginas</span></h2>
+
+    <div style="display:grid;gap:10px">
+      <div class="sg-box" style="display:grid;grid-template-columns:180px 1fr 1fr;gap:16px;align-items:start">
+        <div><p class="sg-label" style="margin:0 0 4px">Arquivo</p><code>index.html</code></div>
+        <div><p class="sg-label" style="margin:0 0 4px">URL final</p><code>/</code> (home)</div>
+        <div><p class="sg-label" style="margin:0 0 4px">Seções</p><span class="sg-note" style="margin:0">Hero · Trust Strip · Dores · Método · Diferenciais · Serviços · Benefícios · Cases · Quem Somos · FAQ · CTA</span></div>
+      </div>
+      <div class="sg-box" style="display:grid;grid-template-columns:180px 1fr 1fr;gap:16px;align-items:start">
+        <div><code>servicos.html</code></div>
+        <div><code>/servicos/</code></div>
+        <div><span class="sg-note" style="margin:0">Hero · 6 cards de serviço com bullet lists · Benefícios · CTA</span></div>
+      </div>
+      <div class="sg-box" style="display:grid;grid-template-columns:180px 1fr 1fr;gap:16px;align-items:start">
+        <div><code>como-trabalhamos.html</code></div>
+        <div><code>/como-trabalhamos/</code></div>
+        <div><span class="sg-note" style="margin:0">Hero · Método FT em 5 etapas (.method-step) · CTA</span></div>
+      </div>
+      <div class="sg-box" style="display:grid;grid-template-columns:180px 1fr 1fr;gap:16px;align-items:start">
+        <div><code>quem-somos.html</code></div>
+        <div><code>/quem-somos/</code></div>
+        <div><span class="sg-note" style="margin:0">Hero · História (Gilmar, 2013, fundadores) · Depoimentos · 5 Valores · CTA</span></div>
+      </div>
+      <div class="sg-box" style="display:grid;grid-template-columns:180px 1fr 1fr;gap:16px;align-items:start">
+        <div><code>cases.html</code></div>
+        <div><code>/cases/</code></div>
+        <div><span class="sg-note" style="margin:0">Hero · 3 cases completos (cenário/ação/resultado) · CTA</span></div>
+      </div>
+      <div class="sg-box" style="display:grid;grid-template-columns:180px 1fr 1fr;gap:16px;align-items:start">
+        <div><code>blog.html</code></div>
+        <div><code>/blog/</code></div>
+        <div><span class="sg-note" style="margin:0">Hero · Filtros de categoria · 6 posts placeholder · CTA</span></div>
+      </div>
+      <div class="sg-box" style="display:grid;grid-template-columns:180px 1fr 1fr;gap:16px;align-items:start">
+        <div><code>contato.html</code></div>
+        <div><code>/contato/</code></div>
+        <div><span class="sg-note" style="margin:0">Formulário + info lateral · FAQ · (sem CTA separado)</span></div>
+      </div>
+      <div class="sg-box" style="display:grid;grid-template-columns:180px 1fr 1fr;gap:16px;align-items:start">
+        <div><code>trabalhe-conosco.html</code></div>
+        <div><code>/trabalhe-conosco/</code></div>
+        <div><span class="sg-note" style="margin:0">Formulário de candidatura + 5 valores listados</span></div>
+      </div>
+      <div class="sg-box" style="display:grid;grid-template-columns:180px 1fr 1fr;gap:16px;align-items:start">
+        <div><code>obrigado.html</code></div>
+        <div><code>/obrigado/</code></div>
+        <div><span class="sg-note" style="margin:0">Página de confirmação após envio de formulário (noindex)</span></div>
+      </div>
+    </div>
+
+    <div class="sg-box" style="margin-top:24px;background:#f0f7ff;border-color:#bfdbfe">
+      <p class="sg-label">Formulário → API</p>
+      <p class="sg-note" style="margin:0">O formulário de contato envia <strong>POST /api/contato</strong> em JSON. No protótipo, é tratado por <code>_worker.js</code> (Cloudflare Worker) via <strong>MailChannels</strong> e encaminhado para <code>gilmar@ftconsult.com.br</code>.<br>No WordPress, substituir por <strong>Contact Form 7</strong>, <strong>WPForms</strong> ou integração direta com RD Station via webhook.</p>
+    </div>
+  </div>
+
+</div>
+</main>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
