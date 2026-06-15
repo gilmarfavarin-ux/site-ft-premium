@@ -61,7 +61,14 @@ p:last-child { margin-bottom: 0; }
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
 .brand { display: inline-flex; align-items: center; gap: 12px; }
-.brand-logo { width: 44px; height: 44px; }
+.brand-logo { display: none; }
+.brand-mark {
+  width: 46px; height: 46px; border-radius: 14px; flex-shrink: 0;
+  display: grid; place-items: center;
+  color: white; font-weight: 800; font-size: 1.1rem; letter-spacing: -.02em;
+  background: linear-gradient(135deg, var(--cyan), var(--violet));
+  box-shadow: 0 10px 28px rgba(0,171,255,.28);
+}
 .brand-copy { display: flex; flex-direction: column; line-height: 1.1; color: white; }
 .brand-copy strong { font-size: 1rem; font-weight: 700; }
 .brand-copy small { font-size: .72rem; color: rgba(255,255,255,.6); }
