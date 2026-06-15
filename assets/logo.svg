@@ -1,17 +1,10 @@
 <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FT Consult">
-  <!-- F vertical -->
-  <line x1="22" y1="18" x2="22" y2="102" stroke="#00ABFF" stroke-width="8" stroke-linecap="round"/>
-  <!-- F top horizontal -->
-  <line x1="22" y1="18" x2="60" y2="18" stroke="#00ABFF" stroke-width="8" stroke-linecap="round"/>
-  <!-- F middle horizontal -->
-  <line x1="22" y1="55" x2="48" y2="55" stroke="#6B8EFF" stroke-width="8" stroke-linecap="round"/>
-  <!-- T top bar -->
-  <line x1="60" y1="18" x2="102" y2="18" stroke="#D96FED" stroke-width="8" stroke-linecap="round"/>
-  <!-- T vertical -->
-  <line x1="81" y1="18" x2="81" y2="102" stroke="#D96FED" stroke-width="8" stroke-linecap="round"/>
-  <!-- Terminal dots -->
-  <circle cx="22" cy="102" r="5.5" fill="#00ABFF"/>
-  <circle cx="48" cy="55" r="5.5" fill="#6B8EFF"/>
-  <circle cx="102" cy="18" r="5.5" fill="#D96FED"/>
-  <circle cx="81" cy="102" r="5.5" fill="#D96FED"/>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ABFF"/>
+      <stop offset="100%" stop-color="#D96FED"/>
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="url(#bg)"/>
+  <text x="60" y="80" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="800" font-size="52" fill="white" letter-spacing="-2">FT</text>
 </svg>
