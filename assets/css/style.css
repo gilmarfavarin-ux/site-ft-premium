@@ -598,6 +598,27 @@ p:last-child { margin-bottom: 0; }
 .whatsapp-btn:hover { transform: scale(1.08); box-shadow: 0 12px 36px rgba(37,211,102,.5); }
 .whatsapp-btn svg { display: block; }
 
+/* ── Microsoft / Result cards ── */
+.ms-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 14px; border-radius: 999px;
+  background: rgba(0,164,239,.12); border: 1px solid rgba(0,164,239,.28);
+  color: #8fe1ff; font-size: .82rem; font-weight: 700; letter-spacing: .06em;
+  margin-bottom: 18px;
+}
+.result-card {
+  padding: 28px 22px; border-radius: var(--radius); text-align: center;
+  background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.13);
+  transition: transform .2s;
+}
+.result-card:hover { transform: translateY(-3px); }
+.result-number {
+  display: block; font-size: clamp(2.4rem,5vw,3.8rem);
+  font-weight: 800; line-height: 1; letter-spacing: -.04em; margin-bottom: 10px;
+  background: linear-gradient(135deg,var(--cyan),var(--violet));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+
 /* ── Scroll animations ── */
 .reveal {
   opacity: 0; transform: translateY(28px);
